@@ -1,1 +1,370 @@
 
+/*ylärivi alkaa*/
+.jokeripokeri {
+  width: 90%;
+  height: 90%;
+  position: fixed;
+  top: 5%;
+  left: 5%;
+  background-color: lightblue;
+  border-radius: 8px;
+  border: solid blue;
+}
+
+.ylarivi {
+  display: flex;
+  flex-direction: row;
+}
+
+.otsikko {
+  margin-left: 5%;
+}
+
+.voittotaulukko {
+  border: solid blue;
+  border-radius: 8px;
+  padding: 1px;
+  margin-top: 1%;
+  margin-left: 50%;
+  margin-right: 1%;
+  width: 200px;
+}
+
+.voittotaulukkorivi {
+  display: flex;
+  flex-direction: row;
+  margin: 2px;
+}
+
+.voittotaulukkorivi p {
+  font-size: 17px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
+.voittotaulukkorivi:nth-child(2n) {
+  background-color: rgb(104, 175, 250);
+}
+
+.voittosuuruus {
+  margin-left: auto;
+  margin-right: 1px;
+}
+/*ylärivi loppuu*/
+
+/*voitonnäyttörivi alkaa*/
+.tuplausvoittonaytto {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.voitonnayttorivi {
+  height: 100px;
+  margin-top: 50px;
+}
+
+.voitonnaytto {
+  text-align: center;
+}
+
+.loppudiv {
+  display: flex;
+  flex-direction: row;
+}
+
+.loppu {
+  margin-left: 100px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.uusipeli {
+  margin-left: 10px;
+  border-radius: 8px;
+  height:70px;
+  width:100px;
+  background-color: rgb(20, 213, 20);
+  font-weight: bold;
+}
+
+.uusipeli:hover {
+  cursor: pointer;
+  height: 77px;
+  width: 110px;
+}
+/*voitonnäyttörivi loppuu*/
+
+/*korttirivi alkaa*/
+
+
+.tuplauskortti {
+  width: 140px;
+  height: 200px;
+  border: solid black;
+  border-radius: 8px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: rgb(16, 45, 149);
+}
+
+.musta {
+  height:70px;
+  width:100px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 80px;
+  border-radius: 8px;
+  background-color: black;
+  font-weight: bold;
+  border: 2px solid black;
+  color: white;
+}
+
+.musta:hover {
+  cursor: pointer;
+  height: 77px;
+  width: 110px;
+}
+
+.punainen {
+  height:70px;
+  width:100px;
+  margin-left: 50px;
+  margin-top: 80px;
+  border-radius: 8px;
+  background-color: red;
+  font-weight: bold;
+  border: 2px solid black;
+  color: white;
+}
+
+.punainen:hover {
+  cursor: pointer;
+  height: 77px;
+  width: 110px;
+}
+
+.korttirivi {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.feikkiDiv {
+  height: 200px;
+}
+
+.kortti {
+  width: 140px;
+  height: 200px;
+  border: solid black;
+  border-radius: 8px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: white;
+}
+
+.symbolipuna {
+  color: red;
+  font-size: 60px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.symbolimusta {
+  color: black;
+  font-size: 60px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.korttiyla {
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 25px;
+}
+
+.korttiala {
+  margin-left: 110px;
+  font-size: 25px;
+  margin-top: 25px;
+}
+/*korttirivi loppuu*/
+
+/*alarivi alkaa*/
+.alarivi {
+  display: flex;
+  flex-direction: row;
+}
+
+.saldo {
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  border-radius: 8px;
+  margin-left: 30px;
+}
+
+.saldoteksti {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.saldoluku {
+  text-align: center;
+  font-weight: bold;
+}
+
+.panos {
+  height:70px;
+  width:100px;
+  margin-left: 50%;
+  margin-top: 20px;
+  border-radius: 8px;
+  background-color: rgb(83, 202, 242);
+  border: 2px solid black;
+}
+
+.panos:hover {
+  cursor: pointer;
+  height: 77px;
+  width: 110px;
+}
+
+.panosTeksti {
+  text-align: center;
+  font-weight: bold;
+}
+
+.panosLuku {
+  text-align: center;
+  font-weight: bold;
+}
+
+.jako {
+  height:70px;
+  width:100px;
+  margin-left: 50px;
+  margin-top: 20px;
+  border-radius: 8px;
+  background-color: rgb(20, 213, 20);
+  font-weight: bold;
+  border: 2px solid black;
+}
+
+.jako:hover {
+  cursor: pointer;
+  height: 77px;
+  width: 110px;
+}
+/*alarivi loppuu*/
+
+/*alarivi2 alkaa*/
+.alarivi2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.saldo2 {
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  border-radius: 8px;
+  margin-left: 30px;
+}
+
+.saldoteksti2 {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.saldoluku2 {
+  text-align: center;
+  font-weight: bold;
+}
+
+.voitonmaksu {
+  height:70px;
+  width:100px;
+  margin-left: 20%;
+  margin-top: 20px;
+  border-radius: 8px;
+  background-color: rgb(242, 245, 38);
+  font-weight: bold;
+  border: 2px solid black;
+}
+
+.voitonmaksu:hover {
+  cursor: pointer;
+  height: 77px;
+  width: 110px;
+}
+
+.tuplaus {
+  height:70px;
+  width:100px;
+  margin-left: 50px;
+  margin-top: 20px;
+  border-radius: 8px;
+  background-color: rgb(249, 166, 23);
+  font-weight: bold;
+  border: 2px solid black;
+}
+
+.tuplaus:hover {
+  cursor: pointer;
+  height: 77px;
+  width: 110px;
+}
+
+.panos2 {
+  height:70px;
+  width:100px;
+  margin-left: 6%;
+  margin-top: 20px;
+  border-radius: 8px;
+  background-color: rgb(83, 202, 242);
+  border: 2px solid black;
+}
+
+.panos2:hover {
+  cursor: pointer;
+  height: 77px;
+  width: 110px;
+}
+
+.panosTeksti2 {
+  text-align: center;
+  font-weight: bold;
+}
+
+.panosLuku2 {
+  text-align: center;
+  font-weight: bold;
+}
+
+.jako2 {
+  height:70px;
+  width:100px;
+  margin-left: 50px;
+  margin-top: 20px;
+  border-radius: 8px;
+  background-color: rgb(20, 213, 20);
+  font-weight: bold;
+  border: 2px solid black;
+}
+
+.jako2:hover {
+  cursor: pointer;
+  height: 77px;
+  width: 110px;
+}
+
+/*alarivi2 loppuu*/
