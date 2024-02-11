@@ -5,6 +5,8 @@ import KorttiMaalla from './numeroKortiksi';
 import VoitonNaytto from './voitonNayttorivi';
 import MikaKasi from './kadenArvo';
 import Voittoluku from './pokerivoittoluku';
+import './cssTyylit/ylarivi.css';
+import './cssTyylit/voitonNayttorivi.css';
 
 // sitten kopioi tämä koodi sinne ja muuta vain kortin maat kuvat symboleiksi
 // siksi että jos joku testaa niin toimii ilman kuvia
@@ -16,6 +18,7 @@ export default function Videopokeri() {
     const [lukittu3, setLukittu3] = useState(false);
     const [lukittu4, setLukittu4] = useState(false);
     const [lukittu5, setLukittu5] = useState(false);
+
     const [jakotila, setJakotila] = useState();
     const [mikakasi, setMikakasi] = useState();
 

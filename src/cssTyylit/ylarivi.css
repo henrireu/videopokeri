@@ -1,0 +1,85 @@
+.jokeripokeri {
+    position: fixed;
+    background-color: lightblue;
+    border-radius: 8px;
+    border: solid blue;
+  }
+
+  .voittotaulukko {
+    border: solid blue;
+    border-radius: 8px;
+    padding: 1px;
+    margin-top: 1%;
+    margin-left: 50%;
+    margin-right: 1%;
+  }
+@media (max-width: 600px) {
+    .jokeripokeri {
+      width: 99%;
+      height: 99%;
+      top: 1%;
+      left: 1%;
+    }
+    .voittotaulukko {
+        width: 40%;
+        margin-left: 1%;
+    }
+  }
+  
+  @media (min-width: 601px) and (max-width: 1200px) {
+    .jokeripokeri {
+      width: 90%;
+      height: 90%;
+      top: 5%;
+      left: 5%;
+    }
+    .voittotaulukko {
+        width: 35%;
+        margin-left: 25%;
+    }
+  }
+  
+  @media (min-width: 1201px) {
+    .jokeripokeri {
+      width: 80%;
+      height: 80%;
+      top: 10%;
+      left: 10%;
+    }
+    .voittotaulukko {
+        width: 30%;
+        margin-left: 50%;
+    }
+  }
+  
+  .ylarivi {
+    display: flex;
+    flex-direction: row;
+    border: solid pink;
+  }
+  
+  .otsikko {
+    margin-left: 5%;
+  }
+  
+
+  .voittotaulukkorivi {
+    display: flex;
+    flex-direction: row;
+    margin: 2px;
+  }
+  
+  .voittotaulukkorivi p {
+    font-size: 17px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+  }
+  
+  .voittotaulukkorivi:nth-child(2n) {
+    background-color: rgb(104, 175, 250);
+  }
+  
+  .voittosuuruus {
+    margin-left: auto;
+    margin-right: 1px;
+  }
