@@ -7,6 +7,7 @@ import MikaKasi from './kadenArvo';
 import Voittoluku from './pokerivoittoluku';
 import './cssTyylit/ylarivi.css';
 import './cssTyylit/voitonNayttorivi.css';
+import './cssTyylit/korttirivi.css';
 
 // sitten kopioi tämä koodi sinne ja muuta vain kortin maat kuvat symboleiksi
 // siksi että jos joku testaa niin toimii ilman kuvia

@@ -1,0 +1,220 @@
+.korttirivi {
+    margin-top: 1%;
+    /*margin-bottom: 20px;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: solid pink;
+}
+
+.feikkiDiv {
+    height: 200px;
+}
+
+.tuplauskortti {
+    width: 140px;
+    height: 200px;
+    border: solid black;
+    border-radius: 8px;
+    background-color: rgb(16, 45, 149);
+  }
+  
+  .musta {
+    height:70px;
+    width:100px;
+    margin-right: 5%;
+    margin-top: 80px;
+    border-radius: 8px;
+    background-color: black;
+    font-weight: bold;
+    border: 2px solid black;
+    color: white;
+  }
+  
+  .musta:hover {
+    cursor: pointer;
+    height: 77px;
+    width: 110px;
+  }
+  
+  .punainen {
+    height:70px;
+    width:100px;
+    margin-left: 5%;
+    margin-top: 80px;
+    border-radius: 8px;
+    background-color: red;
+    font-weight: bold;
+    border: 2px solid black;
+    color: white;
+  }
+  
+  .punainen:hover {
+    cursor: pointer;
+    height: 77px;
+    width: 110px;
+  }
+  
+  .kortti {
+    width: 140px;
+    height: 200px;
+    border: solid black;
+    border-radius: 8px;
+    margin-left: 1%;
+    margin-right: 1%;
+    background-color: white;
+  }
+  
+  .symbolipuna {
+    color: red;
+    font-size: 60px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  .symbolimusta {
+    color: black;
+    font-size: 60px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  .korttiyla {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 25px;
+  }
+  
+  .korttiala {
+    margin-left: 110px;
+    font-size: 25px;
+    margin-top: 25px;
+  }
+
+  @media (min-width: 601px) and (max-width: 1200px) {
+    .feikkiDiv {
+        height: 140px;
+    }
+    .kortti {
+        width: 90px;
+        height: 135px;
+    }
+    .symbolipuna {
+        color: red;
+        font-size: 40px;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      
+      .symbolimusta {
+        color: black;
+        font-size: 40px;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      .korttiyla {
+        margin-top: 7px;
+        margin-left: 7px;
+        font-size: 20px;
+      }
+      
+      .korttiala {
+        margin-left: 68px;
+        font-size: 20px;
+        margin-top: 15px;
+      }
+      .tuplauskortti {
+        width: 90px;
+        height: 135px;
+      }
+      .musta {
+        height:60px;
+        width:80px;
+        margin-right: 5%;
+        margin-top: 50px;
+      }
+      
+      .musta:hover {
+        height: 66px;
+        width: 88px;
+      }
+      
+      .punainen {
+        height:60px;
+        width:80px;
+        margin-left: 5%;
+        margin-top: 50px;
+      }
+      
+      .punainen:hover {
+        height: 66px;
+        width: 88px;
+      }
+  }
+
+  @media (max-width: 600px) {
+    .feikkiDiv {
+        height: 140px;
+    }
+    .kortti {
+        width: 90px;
+        height: 135px;
+    }
+    .symbolipuna {
+        color: red;
+        font-size: 40px;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      
+      .symbolimusta {
+        color: black;
+        font-size: 40px;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      .korttiyla {
+        margin-top: 7px;
+        margin-left: 7px;
+        font-size: 20px;
+      }
+      
+      .korttiala {
+        margin-left: 68px;
+        font-size: 20px;
+        margin-top: 15px;
+      }
+      .tuplauskortti {
+        width: 90px;
+        height: 135px;
+      }
+      .musta {
+        height:60px;
+        width:80px;
+        margin-right: 5%;
+        margin-top: 50px;
+      }
+      
+      .musta:hover {
+        height: 66px;
+        width: 88px;
+      }
+      
+      .punainen {
+        height:60px;
+        width:80px;
+        margin-left: 5%;
+        margin-top: 50px;
+      }
+      
+      .punainen:hover {
+        height: 66px;
+        width: 88px;
+      }
+  }
