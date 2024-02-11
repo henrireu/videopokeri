@@ -158,63 +158,66 @@
 
   @media (max-width: 600px) {
     .feikkiDiv {
-        height: 140px;
+        height: 110px;
     }
     .kortti {
-        width: 90px;
-        height: 135px;
+        width: 70px;
+        height: 110px;
     }
     .symbolipuna {
         color: red;
-        font-size: 40px;
+        font-size: 30px;
         text-align: center;
-        margin-top: 0;
+        margin-top: 8px;
         margin-bottom: 0;
       }
       
       .symbolimusta {
         color: black;
-        font-size: 40px;
+        font-size: 30px;
         text-align: center;
-        margin-top: 0;
+        margin-top: 8px;
         margin-bottom: 0;
       }
       .korttiyla {
-        margin-top: 7px;
-        margin-left: 7px;
-        font-size: 20px;
+        margin-top: 5px;
+        margin-left: 5px;
+        font-size: 18px;
+        margin-bottom: 0;
       }
       
       .korttiala {
-        margin-left: 68px;
+        margin-left: 50px;
         font-size: 20px;
         margin-top: 15px;
       }
       .tuplauskortti {
-        width: 90px;
-        height: 135px;
+        width: 70px;
+        height: 110px;
       }
       .musta {
-        height:60px;
-        width:80px;
+        height:50px;
+        width:65px;
         margin-right: 5%;
-        margin-top: 50px;
+        margin-top: 40px;
+        font-size: 11px;
       }
       
       .musta:hover {
-        height: 66px;
-        width: 88px;
+        height: 55px;
+        width: 71px;
       }
       
       .punainen {
-        height:60px;
-        width:80px;
+        height:50px;
+        width:65px;
         margin-left: 5%;
-        margin-top: 50px;
+        margin-top: 40px;
+        font-size: 11px;
       }
       
       .punainen:hover {
-        height: 66px;
-        width: 88px;
+        height: 55px;
+        width: 71px;
       }
   }
