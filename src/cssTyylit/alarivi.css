@@ -1,0 +1,154 @@
+.alarivi {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .saldo {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    border-radius: 8px;
+    margin-left: 5%;
+    margin-top: 2%;
+  }
+  
+  .saldoteksti {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  .saldoluku {
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .panos {
+    height:70px;
+    width:100px;
+    margin-left: 50%;
+    margin-top: 20px;
+    border-radius: 8px;
+    background-color: rgb(83, 202, 242);
+    border: 2px solid black;
+  }
+  
+  .panos:hover {
+    cursor: pointer;
+    height: 77px;
+    width: 110px;
+  }
+  
+  .panosTeksti {
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .panosLuku {
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .jako {
+    height:70px;
+    width:100px;
+    margin-left: 50px;
+    margin-top: 20px;
+    border-radius: 8px;
+    background-color: rgb(20, 213, 20);
+    font-weight: bold;
+    border: 2px solid black;
+  }
+  
+  .jako:hover {
+    cursor: pointer;
+    height: 77px;
+    width: 110px;
+  }
+
+  @media (min-width: 601px) and (max-width: 1200px) {
+    .saldo {
+        width: 80px;
+        height: 80px;
+      }
+      .panos {
+        height:60px;
+        width:85px;
+        margin-left: 35%;
+      }
+      
+      .panos:hover {
+        height: 66px;
+        width: 93px;
+      }
+      
+      .panosTeksti {
+        text-align: center;
+        font-weight: bold;
+        margin-top: 10px;
+        margin-bottom: 0;
+      }
+      
+      .panosLuku {
+        text-align: center;
+        font-weight: bold;
+        margin-top: 5px;
+      }
+      .jako {
+        height:60px;
+        width:85px;
+        margin-left: 40px;
+      }
+      
+      .jako:hover {
+        height: 66px;
+        width: 93px;
+      }
+  }
+
+  @media (max-width: 600px) {
+    .saldo {
+        width: 60px;
+        height: 60px;
+      }
+      .saldoteksti {
+        margin-top: 10px;
+        margin-bottom: 0;
+      }
+      
+      .saldoluku {
+        margin-top: 6px;
+      }
+      .panos {
+        height:40px;
+        width:60px;
+        margin-left: 35%;
+      }
+      
+      .panos:hover {
+        height: 44px;
+        width: 66px;
+      }
+      
+      .panosTeksti {
+        font-size: 13px;
+        margin-top: 5px;
+        margin-bottom: 0;
+      }
+      
+      .panosLuku {
+        font-size: 13px;
+        margin-top: 3px;
+      }
+      .jako {
+        height:40px;
+        width:60px;
+        margin-left: 30px;
+        font-size: 13px;
+      }
+      
+      .jako:hover {
+        height: 44px;
+        width: 66px;
+      }
+  }
