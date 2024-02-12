@@ -1,0 +1,162 @@
+.alarivi2 {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .saldo2 {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    border-radius: 8px;
+    margin-left: 5%;
+    margin-top: 5px;
+  }
+  
+  .saldoteksti2 {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  .saldoluku2 {
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .voitonmaksu {
+    height:70px;
+    width:100px;
+    margin-left: 20%;
+    margin-top: 20px;
+    border-radius: 8px;
+    background-color: rgb(242, 245, 38);
+    font-weight: bold;
+    border: 2px solid black;
+  }
+  
+  .voitonmaksu:hover {
+    cursor: pointer;
+    height: 77px;
+    width: 110px;
+  }
+  
+  .tuplaus {
+    height:70px;
+    width:100px;
+    margin-left: 50px;
+    margin-top: 20px;
+    border-radius: 8px;
+    background-color: rgb(249, 166, 23);
+    font-weight: bold;
+    border: 2px solid black;
+  }
+  
+  .tuplaus:hover {
+    cursor: pointer;
+    height: 77px;
+    width: 110px;
+  }
+  
+  .panos2 {
+    height:70px;
+    width:100px;
+    margin-left: 6%;
+    margin-top: 20px;
+    border-radius: 8px;
+    background-color: rgb(83, 202, 242);
+    border: 2px solid black;
+  }
+  
+  .panos2:hover {
+    cursor: pointer;
+    height: 77px;
+    width: 110px;
+  }
+  
+  .panosTeksti2 {
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .panosLuku2 {
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .jako2 {
+    height:70px;
+    width:100px;
+    margin-left: 50px;
+    margin-top: 20px;
+    border-radius: 8px;
+    background-color: rgb(20, 213, 20);
+    font-weight: bold;
+    border: 2px solid black;
+  }
+  
+  .jako2:hover {
+    cursor: pointer;
+    height: 77px;
+    width: 110px;
+  }
+  
+  @media (min-width: 601px) and (max-width: 1200px) {
+    .saldo2 {
+        width: 80px;
+        height: 80px;
+        margin-left: 3%;
+    }
+    .voitonmaksu {
+        height: 60px;
+        width: 95px;
+        margin-left: 10%;
+    }
+    .voitonmaksu:hover {
+        height: 66px;
+        width: 104px;
+    }
+    .tuplaus {
+        height: 60px;
+        width: 80px;
+        margin-left: 15px;
+    }
+    .tuplaus:hover {
+        height: 66px;
+        width: 93px;
+    }
+    .panos2 {
+        height: 60px;
+        width: 80px;
+        margin-left: 15px;
+    }
+    .panosTeksti2 {
+        margin-top: 7px;
+        margin-bottom: 10px;
+    }
+    .panos2:hover {
+        height: 66px;
+        width: 93px;
+    }
+    .jako2 {
+        height: 60px;
+        width: 80px;
+        margin-left: 15px;
+    }
+  }
+
+
+
+  @media (max-width: 600px) {
+    .saldo2 {
+        width: 60px;
+        height: 60px;
+    }
+    .saldotekst2 {
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+      
+    .saldoluku2 {
+        margin-top: 6px;
+    }
+  }
