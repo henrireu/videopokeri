@@ -109,7 +109,7 @@
     .voitonmaksu {
         height: 60px;
         width: 95px;
-        margin-left: 10%;
+        margin-left: 30%;
     }
     .voitonmaksu:hover {
         height: 66px;
@@ -167,7 +167,7 @@
     .voitonmaksu {
         height: 40px;
         width: 80px;
-        margin-left: 5%;
+        margin-left: 25%;
         font-size: 12px;
         word-break: break-all;
         margin-top: 10px;

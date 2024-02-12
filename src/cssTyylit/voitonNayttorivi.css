@@ -1,6 +1,7 @@
 .voitonnayttorivi {
-    height: 10%;
-    margin-top: 5%;
+    /*height: 10%;*/
+    /*margin-top: 5%;*/
+    margin-top: 10px;
   }
 
   .tuplausvoittonaytto {
@@ -27,7 +28,7 @@
   .uusipeli {
     margin-left: 1%;
     border-radius: 8px;
-    height:70px;
+    height:60px;
     width:100px;
     background-color: rgb(20, 213, 20);
     font-weight: bold;
@@ -35,42 +36,56 @@
   
   .uusipeli:hover {
     cursor: pointer;
-    height: 77px;
+    height: 66px;
     width: 110px;
   }
 
   @media (min-width: 1201px) {
     .voitonnayttorivi {
-        height: 10%;
+        height: 50px;
         margin-top: 5%;
     }
   }
 
   @media (min-width: 601px) and (max-width: 1200px) {
     .voitonnayttorivi {
-        height: 7%;
+        /*height: 7%;*/
+        height: 45px;
         margin-top: 3%;
+    }
+    .loppu {
+      margin-top: 1px;
+      font-size: 18px;
+    }
+    .uusipeli {
+      height: 50px;
+      width: 70px;
+    }
+    .uusipeli:hover {
+      height: 55px;
+      width: 77px;
     }
   }
 
   @media (max-width: 600px) {
     .voitonnayttorivi {
-        height: 5%;
+        /*height: 5%;*/
+        height: 40px;
         margin-top: 1%;
     }
     .uusipeli {
-        margin-left: 1%;
-        border-radius: 8px;
-        height:50px;
-        width:70px;
-        background-color: rgb(20, 213, 20);
-        font-weight: bold;
-      }
+        height:40px;
+        width:60px;
+    }
+    .loppu {
+        margin-top: 1px;
+        font-size: 16px;
+    }
       
       .uusipeli:hover {
         cursor: pointer;
-        height: 55px;
-        width: 77px;
+        height: 44px;
+        width: 66px;
       }
   }
   

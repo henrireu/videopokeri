@@ -471,12 +471,12 @@ export default function Videopokeri() {
 
                     <button className="tuplaus" onClick={() => tuplaus()}>Tuplaus</button>
 
-                    <div className="panos2" onClick={() => panosvaihto()}>
+                    {/*<div className="panos2" onClick={() => panosvaihto()}>
                         <p className="panosTeksti2">PANOS</p>
                         {palautapanos()}
-                    </div>
+                    </div>*/}
 
-                    <button className="jako2" onClick={() => jako()}>JAKO</button>
+                    {/*<button className="jako2" onClick={() => jako()}>JAKO</button>*/}
                 </div>
             )}
         </div>
