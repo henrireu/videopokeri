@@ -117,16 +117,16 @@
     }
     .tuplaus {
         height: 60px;
-        width: 80px;
+        width: 77px;
         margin-left: 15px;
     }
     .tuplaus:hover {
         height: 66px;
-        width: 93px;
+        width: 84px;
     }
     .panos2 {
         height: 60px;
-        width: 80px;
+        width: 77px;
         margin-left: 15px;
     }
     .panosTeksti2 {
@@ -135,12 +135,16 @@
     }
     .panos2:hover {
         height: 66px;
-        width: 93px;
+        width: 84px;
     }
     .jako2 {
         height: 60px;
-        width: 80px;
+        width: 77px;
         margin-left: 15px;
+    }
+    .jako2:hover {
+        height: 66px;
+        width: 84px;
     }
   }
 
@@ -150,13 +154,62 @@
     .saldo2 {
         width: 60px;
         height: 60px;
+        margin-left: 1%;
     }
-    .saldotekst2 {
+    .saldoteksti2 {
         margin-top: 10px;
         margin-bottom: 0;
     }
       
     .saldoluku2 {
         margin-top: 6px;
+    }
+    .voitonmaksu {
+        height: 40px;
+        width: 80px;
+        margin-left: 5%;
+        font-size: 12px;
+        word-break: break-all;
+        margin-top: 10px;
+    }
+    .voitonmaksu:hover {
+        height: 44px;
+        width: 88px;
+    }
+    .tuplaus {
+        height: 40px;
+        width: 60px;
+        margin-left: 10px;
+        font-size: 12px;
+        margin-top: 10px;
+    }
+    .tuplaus:hover {
+        height: 44px;
+        width: 66px;
+    }
+    .panos2 {
+        height: 40px;
+        width: 60px;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    .panosTeksti2 {
+        font-size: 12px;
+        margin-top: 4px;
+        margin-bottom: 5px;
+    }
+    .panos2:hover {
+        height: 44px;
+        width: 66px;
+    }
+    .jako2 {
+        height: 40px;
+        width: 60px;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    .jako2:hover {
+        height: 44px;
+        width: 66px;
     }
   }

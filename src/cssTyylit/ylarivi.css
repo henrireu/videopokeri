@@ -55,7 +55,6 @@
   .ylarivi {
     display: flex;
     flex-direction: row;
-    border: solid pink;
   }
   
   .otsikko {
