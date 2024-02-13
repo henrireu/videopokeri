@@ -35,6 +35,9 @@ export default function Videopokeri() {
     const [voittosumma, setVoittosumma] = useState(0);
     const [tuplausluku, setTuplausluku] = useState();
 
+    //tila mahdolliselle uudelle tuplaukselle
+    const [uusituplaus, setUusituplaus] = useState(false);
+
     const[tila, setTila] = useState(false);
     //tämä on tehty vain sitä varten kun saldo loppuu
     useEffect(() => {
@@ -332,22 +335,65 @@ export default function Videopokeri() {
     }
 
     function voitonmaksu() {
-        let lista = kortit;
-        let kasi = MikaKasi(lista);
-        let numero = Voittoluku(kasi, panos);
-
-        let tulevasaldo = saldo + numero;
-        setSaldo(tulevasaldo);
+        if (tuplaustila === true) {
+            let tulevasaldo = saldo + voittosumma;
+            setSaldo(tulevasaldo);
+        } else {
+            let lista = kortit;
+            let kasi = MikaKasi(lista);
+            let numero = Voittoluku(kasi, panos);
+            let tulevasaldo = saldo + numero;
+            setSaldo(tulevasaldo);
+        }
+        setUusituplaus(false);
         setTuplaustila(false);
+        setTuplataanko(false);
+        setJakotila(undefined);
     }
 
     function tuplaus() {
+        console.log(voittosumma);
         setTuplataanko(true);
+        if (uusituplaus === true) {
+            setUusituplaus(false);
+            setTuplausvalinta("");
+        }
+    }
+
+    function tuplaauudestaan() {
+        setUusituplaus(false);
+        setTuplausvalinta("");
     }
 
     // tee vain yhden tuplauksen mahdollisuus
     function tuplausrivi() {
-        return (
+        if (uusituplaus === true) {
+            return (
+                <div className="korttirivi">
+                    {/*<button onClick={() => tuplaauudestaan()}>uusituplaus</button>*/}
+                    <div className="kortti">
+                        {KorttiMaalla(tuplausluku, false)}
+                    </div>
+                </div>
+            )
+        } else {
+            return (
+                <div className="korttirivi">
+                    <button className="musta" onClick={() => tuplausmusta()}>musta</button>
+                    {tuplausvalinta === "" ? (
+                        <div className="tuplauskortti">
+                        </div>
+                    ) : (
+                        <div className="kortti">
+                            {KorttiMaalla(tuplausluku, false)}
+                        </div>
+                    )}
+                    
+                    <button className ="punainen" onClick={() => tuplauspunainen()}>punainen</button>
+                </div>
+            )
+        }
+        /*return (
             <div className="korttirivi">
                 <button className="musta" onClick={() => tuplausmusta()}>musta</button>
                 {tuplausvalinta === "" ? (
@@ -361,7 +407,7 @@ export default function Videopokeri() {
                 
                 <button className ="punainen" onClick={() => tuplauspunainen()}>punainen</button>
             </div>
-        )
+        )*/
     }
 
     function tuplausmusta() {
@@ -377,15 +423,18 @@ export default function Videopokeri() {
             setTuplausluku(numero);
 
             if(tuplausvari === "musta") {
+                setUusituplaus(true);
                 let voittosum = voittosumma * 2;
-                let tulevasaldo = saldo + voittosum;
-                setSaldo(tulevasaldo);
+                //let tulevasaldo = saldo + voittosum;
+                //setSaldo(tulevasaldo);
                 setVoittosumma(voittosum);
             } else {
+                setUusituplaus(false);
                 setVoittosumma(0);
+                setTuplaustila(false);
             }
             setTuplausvalinta("musta");
-            setTuplaustila(false);
+            //setTuplaustila(false);
         }
     }
 
@@ -402,15 +451,18 @@ export default function Videopokeri() {
             setTuplausluku(numero);
 
             if(tuplausvari === "punainen") {
+                setUusituplaus(true);
                 let voittosum = voittosumma * 2;
-                let tulevasaldo = saldo + voittosum;
-                setSaldo(tulevasaldo);
+                //let tulevasaldo = saldo + voittosum;
+                //setSaldo(tulevasaldo);
                 setVoittosumma(voittosum);
             } else {
                 setVoittosumma(0);
+                setUusituplaus(false);
+                setTuplaustila(false);
             }
             setTuplausvalinta("punainen");
-            setTuplaustila(false);
+            //setTuplaustila(false);
         }
     }
 
@@ -424,7 +476,7 @@ export default function Videopokeri() {
 
             <div className="voitonnayttorivi">
                 {tila === false ? (
-                    VoitonNaytto(mikakasi, jakotila, panos, tuplausvalinta, voittosumma)
+                    VoitonNaytto(mikakasi, jakotila, panos, tuplausvalinta, voittosumma, tuplataanko)
                 ) : (
                     <div className="loppudiv">
                         <p className="loppu">Saldo loppui! Jos haluat jatkaa pelaamista, niin paina Uusipeli</p>
